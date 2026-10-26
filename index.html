@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscador de estudiantes</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Buscar estudiante por ID</h1>
+    <p class="ayuda">IDs disponibles: 1 , 2 y 3 .</p>
+
+    <form id="formulario">
+      <label for="inputId">ID del estudiante</label>
+      <div class="fila">
+        <input id="inputId" type="number" min="0" step="1" value="2" required>
+        <button type="submit">Buscar</button>
+      </div>
+    </form>
+
+    <div class="acciones">
+      <button id="btnEjemplos" type="button" class="secundario">Ejecutar ejemplo (2, 1, 10)</button>
+      <button id="btnLimpiar" type="button" class="secundario">Limpiar</button>
+    </div>
+
+    <section id="salida" aria-live="polite"></section>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

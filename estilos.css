@@ -1,0 +1,101 @@
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #f3f5f2;;
+  color: #1d2a25;
+  line-height: 1.5;
+  text-align: center;
+}
+
+main {
+  max-width: 520;
+  margin: 0 auto;
+  padding: 4.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 { font-size: 1.6rem; margin: 0 0 .25rem; 
+}
+
+.ayuda { margin: 0 0 1.5rem; color: #52625a;
+ }
+
+label { display: block;
+   font-weight: 600;
+    margin-bottom: .35rem; 
+  }
+
+.fila { display: flex; 
+  gap: .5rem;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  width: 100%;
+ }
+
+input {
+  flex: 1;
+  padding: .6rem .75rem;
+  font-size: 1rem;
+  border: 1px solid  #c9d3cd;
+  border-radius: 999px;
+  background: #fff;
+}
+
+button {
+  padding: .6rem 1rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 999px;
+  background: #1f6f54;
+  color: #fff;
+  cursor: pointer;
+}
+button.secundario {
+   background: transparent; 
+   color: #1f6f54; 
+   border: 1px solid #1f6f54;
+   }
+
+button:focus-visible, input:focus-visible {
+   outline: 3px solid #7fc4a8; 
+   outline-offset: 2px; 
+  }
+
+.acciones { 
+  display: flex; 
+  flex-wrap: wrap;
+  justify-self: center;
+   gap: .5rem;
+    margin: 1rem 0 1.5rem; 
+  }
+
+#salida {
+   display: flex; 
+   flex-direction: column; 
+   align-items: center;
+   gap: .4rem; 
+   width: 100%;
+  }
+
+.resultado {
+  margin: 0;
+  padding: .55rem .8rem;
+  background: #fff;
+   border-left: 4px solid #c9d3cd;
+    border-radius: 16px;
+   }
+
+.resultado.ok {
+   border-left-color: #1f6f54; 
+  }
+
+.resultado.error {
+   border-left-color: #b3261e;
+    color:#b3261e; 
+  }
